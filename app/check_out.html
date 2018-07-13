@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Check out page</title>
+    <link href="Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <link href="home.css" rel="stylesheet" />
+
+    <button onclick="goBack()" align ="left">Go Back</button>
+    <script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+
+</head>
+<body id = "listbody">
+
+<div align ="center">
+  <form class ="form" >
+                            <div class="formstyle">
+                                <label>
+                                    Device serial number:
+                                    <input id ="serial" required/>
+                                </label>
+                            </div><br>
+
+
+                              <div class="formstyle">
+                                <label>
+                                    Student Name:
+                                    <input id ="name" required/>
+                                </label>
+                            </div><br>
+
+                             <div class="formstyle">
+                                <label>
+                                    Student ID:
+                                    <input id ="idnumber" required/>
+                                </label>
+                            </div><br>
+
+                             <div class="formstyle">
+                                <label>
+                                    Student Email adress:
+                                    <input id ="email" type="email" required/>
+                                </label>
+                            </div><br>
+
+                  <div class="formstyle">
+                                <label>
+                                    Student Phone number:
+                                    <input id ="phone" type="tel" placeholder ="###-###-####" required/>
+                                </label>
+                            </div><br>
+
+
+                  <div class="formstyle">
+                                <label>
+                                    Check-in Date:
+                                </label>
+                      <input id ="checkindate" type="date">
+                            </div><br>
+
+                     <div class="formstyle">
+                     <label>User agreement</label>
+                      <input type="checkbox" id="agreement" class='win-checkbox'><br>
+
+                      <label>Charger issued</label>
+                      <input type="checkbox" id="charger" class='win-checkbox'><br>
+
+                      <label>Cable issued</label>
+                      <input type="checkbox" id ="cable" class='win-checkbox'> <br>
+                            </div><br>
+
+                           <div>
+                               <button type="reset">reset</button>
+                        </div><br><br>
+
+                        </form>
+
+  <button id ="sub">Submit</button><br>
+</div>
+
+<script src="C:/Users/ravi/Desktop/Discovere/fire.js"></script>
+
+
+</body>
+</html>

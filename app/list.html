@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>List view </title>
+    <link href="home.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="C:/Users/ravi/Desktop/Discovere/jquery-3.3.1.min.js"></script>
+
+
+
+    <script src="C:/Users/ravi/Desktop/Discovere/shim.min.js"></script>
+    <script src="C:/Users/ravi/Desktop/Discovere/xlsx.full.min.js"></script>
+    <script src="C:/Users/ravi/Desktop/Discovere/xlsx.core.min.js"></script>
+    <script src="C:/Users/ravi/Desktop/Discovere/FileSaver.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.30.7/js/jquery.tablesorter.js"></script> -->
+    <script src="C:/Users/ravi/Desktop/Discovere/jquery.tablesorter.js"></script>
+    <!-- <script src="http://tablesorter.com/addons/pager/jquery.tablesorter.pager.js"></script> -->
+
+    <script src="C:/Users/ravi/Desktop/Discovere/tableexport.js"></script>
+
+
+
+
+
+    <button onclick="goBack()" align ="left">Go Back</button>
+    <script> function goBack() { window.history.back(); } </script>
+
+</head>
+
+<body id = "listbody">
+
+  <button onclick="refresh()" align ="left">Refresh</button>
+  <script> function refresh() {history.go(0); } </script>
+  <button onclick="excel()" align = "left">Create Excel</button>
+
+
+<script src="C:/Users/ravi/Desktop/Discovere/list.js"></script>
+
+<h3 align = "center">List View</h3>
+
+<div align ="center">
+
+  <table id= "myTable" class="tablesorter">
+    <thead>
+      <tr>
+        <th>Device serial number</th>
+        <th>Student Name</th>
+        <th>Student Id</th>
+        <th>Student Email</th>
+        <th>Check out Date</th>
+        <th>check in Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <tbody id ="Table_body">
+
+    </tbody>
+
+  </table>
+
+<script>
+function excel(){
+  TableExport(document.getElementById('myTable'));
+}
+
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+</script>
+
+</div>
+
+
+
+</body>
+</html>

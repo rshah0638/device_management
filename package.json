@@ -1,0 +1,38 @@
+{
+  "name": "discovere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron . --allow-file-access-from-files",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ravi kumar shah",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.4",
+    "electron-packager": "^12.1.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-react": "^3.1.0",
+    "gulp-run": "^1.7.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "reactify": "^1.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "electron-reload": "^1.2.5",
+    "file-saver": "^1.3.2",
+    "firebase": "^5.2.0",
+    "jquery": "^3.3.1",
+    "jquery-tablesort": "0.0.11",
+    "lodash": "^4.17.10",
+    "nodemailer": "^4.6.7",
+    "tableexport": "^5.0.2",
+    "tablesorter": "^2.30.7",
+    "vanillajs": "0.0.0",
+    "xlsx": "^0.13.2"
+  }
+}

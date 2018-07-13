@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Search </title>
+    <link href="home.css" rel="stylesheet" />
+
+
+
+    <button onclick="goBack()" align ="left">Go Back</button>
+    <script> function goBack() { window.history.back(); } </script>
+
+</head>
+
+<body id = "listbody">
+
+  <button onclick="refresh()" align ="left">Refresh</button>
+  <script> function refresh() {history.go(0); } </script>
+
+  <div align ="center">
+    <form class ="form" >
+
+<select id = "searchby">
+<option value="none" selected>--Search by--</option>
+<option value="Device_serial">Device serial number</option>
+<option value="Student_id">Student Id</option>
+
+</select>
+<input id ="search_item" required/>
+<br><br>
+
+                                 <button type="reset">reset</button>
+                                   </form>
+                                  <button id ="search_button">Submit</button><br>
+                          </div>
+
+
+<script src="C:/Users/ravi/Desktop/Discovere/search.js"></script>
+
+<h3 align = "center">Search Results</h3>
+
+<div>
+
+
+
+
+  <table class = class="tablesorter" id= "myTable_search">
+    <thead>
+      <tr>
+        <th>Device serial number</th>
+        <th>Student Name</th>
+        <th>Student Id</th>
+        <th>Student Email</th>
+        <th>Check out Date</th>
+        <th>check in Date</th>
+        <th>Check in key</th>
+          <th>Status</th>
+        <tr>
+    </thead>
+    <tbody id ="Table_search">
+
+    </tbody>
+
+  </table>
+
+
+
+
+</div>
+
+
+</body>
+</html>

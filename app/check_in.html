@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Check in page</title>
+    <link href="Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <link href="home.css" rel="stylesheet" />
+
+    <button onclick="goBack()" align ="left">Go Back</button>
+    <script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+
+</head>
+<body>
+
+<div align ="center">
+  <form class ="form" >
+                            <div class="formstyle">
+                                <label>
+                                    Device serial number:
+                                    <input id ="serialin" required/>
+                                </label>
+                            </div><br>
+
+                             <div class="formstyle">
+                                <label>
+                                    Student ID:
+                                    <input id ="idnumberin" required/>
+                                </label>
+                            </div><br>
+
+                             <div class="formstyle">
+                                <label>
+                                    Student Email adress:
+                                    <input id ="emailin" type="email" required/>
+                                </label>
+                            </div><br>
+
+                     <div class="formstyle">
+
+                       <label>Device Lost</label>
+                       <input type="checkbox" id="lost" class='win-checkbox'><br>
+
+                      <label>Returned charger</label>
+                      <input type="checkbox" id="chargerin" class='win-checkbox'><br>
+
+                      <label>Returned Cable</label>
+                      <input type="checkbox" id ="cablein" class='win-checkbox'> <br>
+                            </div><br>
+
+                           <div>
+                               <button type="reset">reset</button>
+                        </div><br><br>
+
+                        </form>
+
+  <button id ="checking">Submit</button><br>
+</div>
+
+<script src="C:/Users/ravi/Desktop/Discovere/checkin.js"></script>
+
+
+</body>
+</html>
