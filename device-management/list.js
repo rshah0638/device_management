@@ -19,14 +19,12 @@ var day = today.getUTCDate();
 var year = today.getUTCFullYear();
 newdate = year + "-" + month + "-" + day;
 var date1 = new Date(newdate);
-var firedata =[];
 
 
 //list view code
   firebase.database().ref("Devices").on('value',function(data) {
     var serial = Object.keys(data.val());
     var arr = Object.values(data.val())
-
 
     for(var i=0; i<arr.length; i++)
     {
@@ -49,31 +47,15 @@ var firedata =[];
 
       }
 
-    //  $('#Table_body').append("<tr><td>"+Device_serial_number+"</td><td>"+Student_Name+"</td><td>"+Student_id+"</td><td>"+
-    //  Student_Email_adress+"</td><td>"+Check_out_Date+"</td><td>"+Check_in_Date+"</td><td>"+Status+"</td></tr>")
-    firedata.push([Device_serial_number,Student_Name,Student_id,Student_Email_adress,Check_out_Date,Check_in_Date,Status],);
+
+console.log(date2, date1,(date2 < date1));
+//console.log(arp)
+    //  console.log(Device_serial_number,Student_Name,Student_id, Student_Email_adress,Check_out_Date,Check_in_Date)
+
+
+      $('#Table_body').append("<tr><td>"+Device_serial_number+"</td><td>"+Student_Name+"</td><td>"+Student_id+"</td><td>"+
+      Student_Email_adress+"</td><td>"+Check_out_Date+"</td><td>"+Check_in_Date+"</td><td>"+Status+"</td></tr>")
 
     }
-console.log(firedata)
-
-$(document).ready(function()
-    {
-    $('#example').DataTable( {
-      
-        data: firedata,
-        columns: [
-            {title: "Device serial number"},
-            {title:"Student Name"},
-            {title:"Student Id"},
-            {title: "Student Email"},
-            {title: "Check out Date"},
-            {title:"check in Date"},
-            {title:"Status"}
-        ]
-    } );
-
-    }
-);
-
 
 }) /// firebase read end

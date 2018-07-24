@@ -34,9 +34,9 @@ var searchonline = document.getElementById("checking");
                 var serialin = document.getElementById("serialin").value;
                 var idnumberin= document.getElementById("idnumberin").value;
                 var emailin = document.getElementById("emailin").value;
-                var chargerin = document.getElementById("chargerin").checked;
-                var cablein = document.getElementById("chargerin").checked;
-                var lost = document.getElementById("lost").checked;
+                var chargerin = document.getElementById("chargerin").value;
+                var cablein = document.getElementById("chargerin").value;
+                var lost = document.getElementById("lost").value;
 
                 for(var i = 0; i<devkey.length; i++) // searches where the device is
                   {
@@ -107,7 +107,7 @@ var searchonline = document.getElementById("checking");
                     service: 'gmail',
                     auth: {
                       user: 'fresnodiscovere@gmail.com',
-                        pass: 'Tablet1911'
+                      pass: 'Tablet1911'
                     }
                   });
 
@@ -115,7 +115,7 @@ var searchonline = document.getElementById("checking");
                     from: 'fresnodiscovere@gmail.com',
                     to: serial_user[serial_user.length - 1].Student_Email_adress,
                     subject: 'Discovere tablet check out receipt',
-                    text: '[Do not reply] thank you for using Discovere program. Your receipt code is '+key
+                    text: '[Do not reply] thank you for using Discovere program. Your receipt code is:'+key
                   };
 
                   transporter.sendMail(mailOptions, function(error, info){

@@ -1,0 +1,72 @@
+
+
+.homepage{
+  background:#C7C4B9;
+}
+
+.divide {
+  align = "center"
+}
+.options{
+    background-color: #008B8B; /* Green */
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.formstyle {
+   font-family:Calibri;
+     line-height: normal;
+align = "center";
+   font-size:14pt;
+
+}
+.form {
+    text-align: center;
+    vertical-align: auto;
+    margin:auto;
+    text-indent: inherit;
+      flex: 1;
+}
+
+#myTable{
+  width: 90%;
+}
+th, td {
+  font-family:Calibri;
+    line-height: normal;
+align = "char";
+  font-size:14pt;
+}
+#sub{
+  background-color: #008B8B; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#listbody{
+   overflow: scroll;
+}
+
+#checking{
+  background-color: #008B8B; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#myTable_search{
+  width: 95%;
+}

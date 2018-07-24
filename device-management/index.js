@@ -10,7 +10,7 @@ app.on('ready', function(){
   }
 });
 
-  appWindow.loadURL(`file://${__dirname}/app/login.html`);
+  appWindow.loadURL(`file://${__dirname}/app/index.html`);
 
 
 })

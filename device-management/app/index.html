@@ -18,47 +18,12 @@
     <script src="https://paramquery.com/jszip-2.5.0/jszip.min.js"></script>
 <script src="https://paramquery.com/jszip-2.5.0/filesaver.js"></script>
 
-
-<button id="signout" align ="left">Log out</button>
-
-<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyA5u1d5fGKWI8nkkaZbB1fe9_5bre5HStA",
-    authDomain: "discoveredevices.firebaseapp.com",
-    databaseURL: "https://discoveredevices.firebaseio.com",
-    projectId: "discoveredevices",
-    storageBucket: "discoveredevices.appspot.com",
-    messagingSenderId: "79302494261"
-  };
-  firebase.initializeApp(config);
-
-const signout = document.getElementById("signout");
-
-// sign out evenlistner..../////////////////////////////////////////////////////////////////////////////
-signout.addEventListener("click", function ()
-{
-
-  firebase.auth().signOut().then(function() {
-  // Sign-out successful.
-}).catch(function(error) {
-  // An error happened.
-});
-
-alert("signed out");
-window.location.href = 'login.html';
-}); // end event listner
-// sign out event listner end..............////////////////////////////////////////////////////////////
-
-</script>
-
 </head>
 <body class ="homepage">
 
 
-<h1 align ="center" class ="titles"> DISCOVERe</h1>
-<h3 align = "center" class ="titles">Device Management</h3>
+<h1 align ="center"> Discovere</h1>
+<h3 align = "center">Device Management</h3>
 
 <div class= "divide" align ="center">
 

@@ -54,27 +54,19 @@ for(var i = 0; i<devkey.length; i++)
           var Student_Name = serial_user[j].Student_Name;
           var Student_id = serial_user[j].Student_id;
           var Student_Email_adress = serial_user[j].Student_Email_adress;
-          var Student_Phone_number = serial_user[j].Student_Phone_number;
-          var Charger_issued = serial_user[j].Charger_issued;
-          var Cable_issued = serial_user[j].Cable_issued;
-          var  Charger_returned = serial_user[j].Charger_returned;
-          var Cable_returned = serial_user[j].Cable_returned;
           var Check_out_Date= serial_user[j].Check_out_Date;
           var Check_in_Date = serial_user[j].Check_in_Date;
           var Check_out_key= serial_user[j].Check_out_key;
-          var Status = serial_user[j].Status;
+          var Status = serial_user[j].Status
 
 
+          $('#Table_search').append("<tr><td>"+Device_serial_number+"</td><td>"+Student_Name+"</td><td>"+Student_id+"</td><td>"+
+           Student_Email_adress+"</td><td>"+Check_out_Date+"</td><td>"+Check_in_Date+"</td><td>"+Check_out_key+"</td><td>"+Status+"</td></tr>")
 
-           $('#description').append("<dt><b>Device serial number :</b></dt><dd>"+Device_serial_number+"</dd><dt>Student Name :</dt><dd>"+Student_Name+"</dd><dt>Student Id :</dt><dd>"+Student_id
-           +"</dd><dt>Student email Address :</dt><dd>"+Student_Email_adress+"</dd><dt>Student Phone number :</dt><dd>"+Student_Phone_number+"</dd><dt>Charger Issued :</dt><dd>"+Charger_issued+
-           "</dd><dt>Cable Issued :</dt><dd>"+Cable_issued+"</dd><dt>Charger returned :</dt><dd>"+Charger_returned+"</dd><dt>Cable returned :</dt><dd>"+Cable_returned
-           +"</dd><dt>Check out date :</dt><dd>"+Check_out_Date+"</dd><dt>Check in date :</dt><dd>"+Check_in_Date+"</dd><dt>Check out Key :</dt><dd>"+Check_out_key
-         +"</dd><dt>Status :</dt><dd>"+Status+"</dd>");
         }
       }
 
-      else   {$('#description').append("<dt>result</dt><dd>"+whether+"</dd>")}
+      else   {$('#Table_search').append("<tr><td>"+whether+"</td><tr>")}
 
       // serial number search end ............................................................
             }
@@ -110,23 +102,15 @@ for(var i = 0; i<devkey.length; i++)
       var Student_Name = found.Student_Name;
       var Student_id = found.Student_id;
       var Student_Email_adress = found.Student_Email_adress;
-      var Student_Phone_number = found.Student_Phone_number;
-      var Charger_issued = found.Charger_issued;
-      var Cable_issued = found.Cable_issued;
-      var  Charger_returned = found.Charger_returned;
-      var Cable_returned = found.Cable_returned;
       var Check_out_Date= found.Check_out_Date;
       var Check_in_Date = found.Check_in_Date;
       var Check_out_key= found.Check_out_key;
-      var Status = found.Status;
+      var Status = found.Status
 
 
+      $('#Table_search').append("<tr><td>"+Device_serial_number+"</td><td>"+Student_Name+"</td><td>"+Student_id+"</td><td>"+
+       Student_Email_adress+"</td><td>"+Check_out_Date+"</td><td>"+Check_in_Date+"</td><td>"+Check_out_key+"</td><td>"+Status+"</td></tr>")
 
-       $('#description').append("<dt><b>Device serial number :</b></dt><dd>"+Device_serial_number+"</dd><dt>Student Name :</dt><dd>"+Student_Name+"</dd><dt>Student Id :</dt><dd>"+Student_id
-       +"</dd><dt>Student email Address :</dt><dd>"+Student_Email_adress+"</dd><dt>Student Phone number :</dt><dd>"+Student_Phone_number+"</dd><dt>Charger Issued :</dt><dd>"+Charger_issued+
-       "</dd><dt>Cable Issued :</dt><dd>"+Cable_issued+"</dd><dt>Charger returned :</dt><dd>"+Charger_returned+"</dd><dt>Cable returned :</dt><dd>"+Cable_returned
-       +"</dd><dt>Check out date :</dt><dd>"+Check_out_Date+"</dd><dt>Check in date :</dt><dd>"+Check_in_Date+"</dd><dt>Check out Key :</dt><dd>"+Check_out_key
-     +"</dd><dt>Status :</dt><dd>"+Status+"</dd>");
 
     }
   }
